@@ -1,0 +1,182 @@
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\ApplicationInsights.config
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\csc.exe
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\csc.exe.config
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\csc.rsp
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\csi.exe
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\csi.exe.config
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\csi.rsp
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.AppContext.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Console.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.IO.Compression.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.Claims.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.ValueTuple.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\vbc.exe
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\vbc.exe.config
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\vbc.rsp
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\VBCSCompiler.exe
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\OnClickEvents.dll.config
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\OnClickEvents.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\OnClickEvents.pdb
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Antlr3.Runtime.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.AI.Web.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Newtonsoft.Json.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.Helpers.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.Mvc.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.Optimization.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.Razor.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.WebPages.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.WebPages.Razor.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\WebGrease.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.Helpers.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.Mvc.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.Optimization.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.Razor.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.WebPages.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\System.Web.WebPages.Razor.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Antlr3.Runtime.pdb
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Newtonsoft.Json.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\bin\Microsoft.AI.Web.xml
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\obj\Debug\OnClickEvents.csprojResolveAssemblyReference.cache
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\obj\Debug\OnClickEvents.csproj.CoreCompileInputs.cache
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\obj\Debug\OnClickEvents.dll
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents\obj\Debug\OnClickEvents.pdb
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\ApplicationInsights.config
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\csc.exe
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\csc.exe.config
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\csc.rsp
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\csi.exe
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\csi.exe.config
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\csi.rsp
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.AppContext.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Collections.Immutable.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Console.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Diagnostics.Process.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.IO.Compression.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.IO.FileSystem.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.IO.Pipes.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Reflection.Metadata.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.AccessControl.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.Claims.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Security.Principal.Windows.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Threading.Thread.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.ValueTuple.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Xml.XmlDocument.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Xml.XPath.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\vbc.exe
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\vbc.exe.config
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\vbc.rsp
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\VBCSCompiler.exe
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\roslyn\VBCSCompiler.exe.config
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\OnClickEvents.dll.config
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\OnClickEvents.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\OnClickEvents.pdb
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Antlr3.Runtime.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.AI.Agent.Intercept.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.AI.DependencyCollector.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.AI.Web.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.AI.WindowsServer.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.ApplicationInsights.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.Web.Infrastructure.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Newtonsoft.Json.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.Helpers.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.Mvc.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.Optimization.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.Razor.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.WebPages.Deployment.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.WebPages.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.WebPages.Razor.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\WebGrease.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.Helpers.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.Mvc.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.Optimization.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.Razor.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.WebPages.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.WebPages.Deployment.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\System.Web.WebPages.Razor.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Antlr3.Runtime.pdb
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Newtonsoft.Json.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.ApplicationInsights.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.AI.DependencyCollector.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.AI.WindowsServer.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\Microsoft.AI.Web.xml
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\obj\Debug\OnClickEvents.csprojResolveAssemblyReference.cache
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\obj\Debug\OnClickEvents.csproj.CoreCompileInputs.cache
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\obj\Debug\OnClickEvents.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\obj\Debug\OnClickEvents.pdb
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\MySql.Data.dll
+E:\HAIDER\OnClick Work\Web\OnClickEvents\OnClickEvents\bin\MySql.Data.xml

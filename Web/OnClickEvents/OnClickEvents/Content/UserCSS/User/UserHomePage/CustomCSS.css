@@ -1,0 +1,45 @@
+﻿.ven-type {
+    padding: 10px 20px 5px 5px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: 5px 5px 8px #000;
+    -webkit-box-shadow: 5px 5px 8px #000;
+    box-shadow: 5px 5px 8px #89c67d;
+    transition: all 1s ease-in-out
+}
+
+    .ven-type:hover {
+        transform: rotateY(360deg)
+    }
+
+    .ven-type img {
+        padding: 15px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0
+    }
+
+.ven-type-title {
+    color: olive;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400
+}
+
+.eventtype {
+    width: 80%;
+    height: 20%;
+    position: relative;
+    margin-left: 15%;
+    margin-top: 20%;
+}

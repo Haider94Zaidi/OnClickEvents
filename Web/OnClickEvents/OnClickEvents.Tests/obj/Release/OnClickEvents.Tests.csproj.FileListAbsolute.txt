@@ -1,0 +1,2 @@
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents.Tests\obj\Release\OnClickEvents.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Haider\documents\visual studio 2017\Projects\OnClickEvents\OnClickEvents.Tests\obj\Release\OnClickEvents.Tests.csproj.CoreCompileInputs.cache

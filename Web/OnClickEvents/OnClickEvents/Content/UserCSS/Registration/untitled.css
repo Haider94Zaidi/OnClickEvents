@@ -1,0 +1,8 @@
+.loader {
+    visibility: hidden;
+    position: relative;
+    margin-top: -70px;
+    margin-left: 95%;
+    height: 60px;
+    width: 30px;
+}

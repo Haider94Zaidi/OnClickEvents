@@ -1,0 +1,64 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render(Url.Content("~/Content/bootstrap.min.css"))
+    @Styles.Render(Url.Content("~/Content/UserCSS/Registration/Google-Style-Login.css"))
+    @Styles.Render(Url.Content("~/Content/UserCSS/Registration/Pretty-Registration-Form.css"))
+    @Styles.Render(Url.Content("~/Content/UserCSS/Registration/styles.css"))
+    @Styles.Render(Url.Content("~/Content/UserCSS/Registration/untitled.css"))
+    @Styles.Render(Url.Content("~/Content/UserCSS/Headers/RegistrationHeader/user.css"))
+</head>
+<body>
+    <nav class="navbar navbar-default custom-header">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><a class="navbar-brand navbar-link" href="#">Company<span>logo </span> </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <form class="navbar-form bootstrap-form-with-validation">
+                    
+                    <div class="form-group">
+                        <label class="control-label sr-only" for="email-input"> </label>
+                        <input class="form-control" type="email" placeholder="Email" id="signin_email">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label sr-only" for="password-input"> </label>
+                        <input class="form-control" type="password" placeholder="Password" id="signin_password">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">
+                        </label>
+                    </div>
+                    <button class="btn btn-default" type="submit" id="signinbtn">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="body-content">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @*@Scripts.Render("~/Scripts/jquery-1.10.2.min.js")*@
+    @Scripts.Render("~/Scripts/bootstrap.min.js")
+    @Scripts.Render("~/Scripts/UserScripts/Register/signup_signin.js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

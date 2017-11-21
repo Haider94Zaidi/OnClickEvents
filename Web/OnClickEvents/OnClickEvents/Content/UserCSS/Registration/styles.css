@@ -1,0 +1,17 @@
+img{
+  margin-left:auto;
+  margin-right:auto;
+  width:250px;
+  height:180px;
+  padding-bottom:25px;
+}
+
+select.form-control{
+  width:90px;
+}
+
+select.form-control{
+  float:left;
+  margin-left:16px;
+}
+

@@ -1,0 +1,132 @@
+﻿
+@{
+    Layout = "~/Views/Headers/VendorHeader/VendorHeader.cshtml";
+}
+
+    @Styles.Render(Url.Content("~/Content/UserCSS/Registration/styles.css"))
+    @Styles.Render(Url.Content("~/Content/UserCSS/Registration/Pretty-Registration-Form.css"))
+<div class="row register-form">
+    <div class="col-md-12">
+        <form class="form-horizontal custom-form" enctype = "multipart/form-data">
+            <h1>Register Venue</h1>
+            <div class="form-group">
+                <div class="col-sm-2 label-column">
+                    <label class="control-label" for="name-input-field">Name </label>
+                </div>
+                <div class="col-sm-6 input-column  col-sm-offset-1">
+                    <input class="form-control" type="text" id="venuename">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2 label-column">
+                    <label class="control-label" for="email-input-field">Address </label>
+                </div>
+                <div class="col-sm-6 input-column  col-sm-offset-1">
+                    <input class="form-control" type="text" id="venueaddress">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2 label-column">
+                    <label class="control-label" for="pawssword-input-field">Phone </label>
+                </div>
+                <div class="col-sm-6 input-column  col-sm-offset-1">
+                    <input class="form-control" type="number" id="venuephone">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2 label-column">
+                    <label class="control-label" for="repeat-pawssword-input-field">Mobile </label>
+                </div>
+                <div class="col-sm-6 input-column  col-sm-offset-1">
+                    <input class="form-control" type="number" id="venuemobile">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2 label-column">
+                    <label class="control-label" for="dropdown-input-field">Venue-Type </label>
+                </div>
+              
+                    <div class="col-sm-2 col-sm-offset-1">
+                        <input type="checkbox" class="venuetypes" id="weddingcheck">
+                        <span>
+                            Wedding
+                        </span>
+                    </div>
+                    <div class="col-sm-2 ">
+                        <input type="checkbox" class="venuetypes" id="concertcheck">
+                        <span>
+                            Concerts
+                        </span>
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="checkbox" class="venuetypes" id="partiescheck">
+                        <span>
+                            Parties
+                        </span>
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="checkbox" class="venuetypes" id="businesscheck">
+                        <span>
+                            Business
+                        </span>
+                   </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2 label-column">
+                    <label class="control-label" for="repeat-pawssword-input-field">Upload Images</label>
+                </div>
+                <div class="col-sm-6 input-column  col-sm-offset-1">
+                    <div class="field" align="left">
+                        <input type="file" id="files" name="files[]" multiple />
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-default submit-button" type="button">Submit Form</button>
+            </form>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript">
+    var count = 0;
+    $(document).ready(function () {
+        if (window.File && window.FileList && window.FileReader) {
+            $("#files").on("change", function (e) {
+
+                var files = e.target.files,
+                    filesLength = files.length;
+                console.log(filesLength);
+                count++;
+                if (count <= 5) {
+                    for (var i = 0; i < filesLength; i++) {
+                        var f = files[i]
+                        var fileReader = new FileReader();
+                        fileReader.onload = (function (e) {
+                            var file = e.target;
+                            $("<div><span class=\"pip\">" +
+                                "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                                "<br/><span class=\"removeImg\">Remove image</span>" +
+                                "</span></div>").insertAfter("#files");
+                            $(".removeImg").click(function () {
+                                $(this).parent(".pip").remove();
+                            });
+
+                            // Old code here
+                            /*$("<img></img>", {
+                              class: "imageThumb",
+                              src: e.target.result,
+                              title: file.name + " | Click to remove"
+                            }).insertAfter("#files").click(function(){$(this).remove();});*/
+
+                        });
+                        fileReader.readAsDataURL(f);
+                    }
+                }
+                else {
+                    alert("No more images please");
+                }
+            });
+        } else {
+            alert("Your browser doesn't support to File API")
+        }
+    });
+</script>

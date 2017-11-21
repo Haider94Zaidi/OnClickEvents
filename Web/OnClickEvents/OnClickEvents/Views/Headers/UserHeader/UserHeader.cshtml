@@ -1,0 +1,98 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+
+    <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <!-- Custom fonts for this template -->
+    @Styles.Render(Url.Content("~/Content/UserCSS/User/UserHomePage/bootstrap.min.css"))
+    @Styles.Render(Url.Content("~/Content/UserCSS/User/UserHomePage/font-awesome.min.css"))
+    @*<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+        <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>*@
+
+
+    <!-- Custom styles for this template -->
+
+    @Styles.Render(Url.Content("~/Content/UserCSS/User/UserHomePage/grayscale.css"))
+    @Styles.Render(Url.Content("~/Content/UserCSS/User/UserHomePage/CustomCSS.css"))
+
+    <title>
+        @ViewBag.Title
+    </title>
+
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+
+
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">Profile</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#download">What's New ?</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">User Name</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    @RenderBody()
+
+    @Scripts.Render("~/Scripts/jquery.min.js")
+
+    @Scripts.Render("~/Scripts/UserScripts/UserHomePage/popper.min.js")
+
+    @Scripts.Render("~/Scripts/bootstrap.min.js")
+
+    <!-- Plugin JavaScript -->
+
+    @Scripts.Render("~/Scripts/UserScripts/UserHomePage/jquery.easing.min.js")
+
+
+    <!-- Custom scripts for this template -->
+
+    @Scripts.Render("~/Scripts/UserScripts/UserHomePage/grayscale.js")
+    @Scripts.Render("~/Scripts/UserScripts/UserHomePage/CustomJS.js")
+
+
+
+
+</body>
+</html>
