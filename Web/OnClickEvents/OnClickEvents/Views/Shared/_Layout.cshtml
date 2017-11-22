@@ -9,31 +9,157 @@
     @Styles.Render("~/Content/UserCSS/Home/user.css")
     @Styles.Render("~/Content/font-awesome.min.css")
     @Scripts.Render("~/bundles/modernizr")
+    
 </head>
 <body>
     <nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button><a class="navbar-brand navbar-link" href="#"><img src="@Url.Content("~/Content/Images/logo.png")" width="100px" height="100px"/></a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><a class="navbar-brand navbar-link" href="#"><img src="@Url.Content("~/Content/Images/logo.png")" width="100px" height="100px" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="~/Home/About">About </a></li>
+                    <li role="presentation"><a href="~/Home/Contact">Contact Us</a></li>
+                    <li class="dropdown">
+                        <li class="dropdown">
+                            <a href="#" class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">
+                                This Way :)
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" id="cust_attempt_signin">Customer Sign In</a></li>
+                                <li><a href="#" id="vend_attempt_signin">Vendor Sign In</a></li>
+                                @*<li><a href="~/Home/Register">Be a Part !</a></li>*@
+                            </ul>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+            @*<li role="presentation"><a href="~/Home/Register">Make Profile</a></li>*@
+            
         </div>
-        <div class="collapse navbar-collapse" id="navcol-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active" role="presentation"><a href="~/Home/About">About </a></li>
-                <li role="presentation"><a href="~/Home/Contact">Contact Us</a></li>
-                <li role="presentation"><a href="~/Home/Register">Make Profile</a></li>
-            </ul>
-        </div>
-    </div>
+    
     </nav>
     <div class= "body-content">
+
+        <!--- Customer LogIN Modal -->
+        <div id="customer-login-overlay" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Login to OnClickEvents.com</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="well">
+                                <form id="custloginForm" method="POST" action="User/DashBoard/" novalidate="novalidate">
+                                    <div class="form-group">
+                                        <label for="username" class="control-label">Email</label>
+                                        <input type="text" class="form-control" id="custemail" name="custemail" value="" required="" title="Please enter you email" placeholder="example@gmail.com">
+                                        <span class="help-block"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="control-label">Password</label>
+                                        <input type="password" class="form-control" id="custpassword" name="custpassword" value="" required="" title="Please enter your password">
+                                        <span class="help-block"></span>
+                                    </div>
+                                    <div id="loginErrorMsg" class="alert alert-error hide">Wrong username og password</div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="remember" id="remember"> Remember login
+                                        </label>
+                                        <p class="help-block">(if this is a private computer)</p>
+                                    </div>
+                                    <button type="submit" class="btn btn-success btn-block" id="custloginbtn">Login</button>
+                                    <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <p class="lead">Register now for <span class="text-success">FREE</span></p>
+                            <ul class="list-unstyled" style="line-height: 2">
+                                <li><span class="fa fa-check text-success"></span> See all your orders</li>
+                                <li><span class="fa fa-check text-success"></span> Update your order</li>
+                                <li><span class="fa fa-check text-success"></span> Book Cheapest and Nearest Venue</li>
+                                <li><span class="fa fa-check text-success"></span> Get Tightly Budget packages</li>
+                                <li><span class="fa fa-check text-success"></span> Get rewards on every order</li>
+                                <li><a href="/read-more/"><u>Read more</u></a></li>
+                            </ul>
+                            <p><a href="~/Home/Register" class="btn btn-info btn-block">Yes please, register now!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--- Vendor LogIN Modal -->
+        <div id="vendor-login-overlay" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Login to OnClickEvents.com</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="well">
+                                <form id="vendorloginForm" method="POST" action="~/Vendor/DashBoard/" novalidate="novalidate">
+                                    <div class="form-group">
+                                        <label for="username" class="control-label">Username</label>
+                                        <input type="text" class="form-control" id="venemail" name="venemail" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                        <span class="help-block"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="control-label">Password</label>
+                                        <input type="password" class="form-control" id="venpassword" name="venpassword" value="" required="" title="Please enter your password">
+                                        <span class="help-block"></span>
+                                    </div>
+                                    <div id="loginErrorMsg" class="alert alert-error hide">Wrong username og password</div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="remember" id="remember"> Remember login
+                                        </label>
+                                        <p class="help-block">(if this is a private computer)</p>
+                                    </div>
+                                    <button type="submit" class="btn btn-success btn-block" id="venloginbtn">Login</button>
+                                    <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <p class="lead">Register now for <span class="text-success">FREE</span></p>
+                            <ul class="list-unstyled" style="line-height: 2">
+                                <li><span class="fa fa-check text-success"></span> See all your Bookings</li>
+                                <li><span class="fa fa-check text-success"></span> Fast payment</li>
+                                <li><span class="fa fa-check text-success"></span> Register your Venues and Caterers</li>
+                                <li><span class="fa fa-check text-success"></span> ReDefine your assets</li>
+                                <li><span class="fa fa-check text-success"></span> Get a gift <small>(only new customers)</small></li>
+                                <li><a href="/read-more/"><u>Read more</u></a></li>
+                            </ul>
+                            <p><a href="~/Home/Register" class="btn btn-info btn-block">Yes please, register now!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---View Body that is to be render dynamically-->
+
+
+
         @RenderBody()
         </div>
         <hr />
+
+   
 
         <footer class="site-footer">
             <div class="container">
@@ -47,9 +173,11 @@
             <div></div>
         </footer>
     
+    
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/UserScripts/HomePage/HomePageScript.js")
     @RenderSection("scripts", required: false)
 </body>
 </html>

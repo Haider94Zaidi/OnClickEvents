@@ -153,6 +153,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Customer.cs" />
+    <Compile Include="Helpers\Vendor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -219,6 +220,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\UserScripts\HomePage\HomePageScript.js" />
     <Content Include="Scripts\UserScripts\Register\signup_signin.js" />
     <Content Include="Scripts\UserScripts\UserHomePage\CustomJS.js" />
     <Content Include="Scripts\UserScripts\UserHomePage\grayscale.js" />

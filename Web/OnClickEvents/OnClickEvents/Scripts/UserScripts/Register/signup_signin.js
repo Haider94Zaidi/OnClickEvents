@@ -12,6 +12,101 @@
 		}
 	});
 
+	$("#continuebtn").click(function () {
+		$("#successModal").modal('hide');
+		window.location.href = "/Home/Index";
+	});
+
+	/***  
+	*
+	* Vendor Registration
+	*
+	*/
+	$("#registervendorbtn").click(function () {
+		
+			
+			var contact = $("#ven_contact").val();
+			var contact_len = $("#ven_contact").val().length;
+
+			var name = $("#ven_name").val();
+			var email = $("#ven_email").val();
+			var pass = $("#ven_pwd").val();
+			var repeatpass = $("#ven_repwd").val();
+			var address = $("#ven_address").val();
+
+			var cnic = $("#ven_cnic").val();
+			var cnic_len = $("#ven_cnic").val().length;
+
+			var account = $("#ven_account").val();
+			var account_len = $("#ven_account").val().length;
+
+			if (name != "") {
+				if (email != "") {
+					if (pass == repeatpass && pass != "" && repeatpass != "") {
+						if (address != "") {
+							if (contact != "" && contact_len == 11) {
+								if (cnic != "" && cnic_len != 12) {
+									if (account != "" && account_len != 23) {
+										
+										$.ajax({
+											type: 'POST',
+											contentType: "application/json; charset=utf-8",
+											dataType: 'json',
+											url: '../Registration/vendorRegister',
+											data: "{'Name': '" + name + "','Email': '" + email + "','Password': '" + pass + "','Address': '" + address + "','Contact': '" + contact + "','Cnic': '" + cnic + "','Account': '" + account + "'}",
+											success: function (data) {
+												if (data == "success") {
+													$("#VendorModal").modal('hide');
+													$("#successModal").modal('show');
+												}
+												else {
+													alert("There is some problem in registering you");
+												}
+											},
+											error: function (data) {
+												alert(data);
+											}
+
+										});
+									}
+									else {
+										$("#errormsg").text("Invalid Account");
+									}
+								}
+								else {
+									$("#errormsg").text("Invalid CNIC");
+								}
+							}
+
+							else {
+								$("#errormsg").text("Invalid Contact");
+							}
+						}
+						else {
+							$("#errormsg").text("Invalid Address");
+						}
+						
+					}
+					else {
+						$("#errormsg").text("Passwords are not same");
+					}
+				}
+				else {
+					$("#errormsg").text("Email is not valid");
+				}
+			}
+			else {
+				$("#errormsg").text("Name is Empty");
+				return;
+			}
+		});
+	
+
+	/***  
+	*
+	* customer Registration
+	*
+	*/
 	$("#registerbtn").click(function () {
 
 		var contact = $("#contact").val();
@@ -70,7 +165,11 @@
 		}
 	});
 
-
+	/***  
+	*
+	* customer Sign In
+	*
+	*/
 	$("#signinbtn").click(function () {
 
 		var email = $("#signin_email").val();

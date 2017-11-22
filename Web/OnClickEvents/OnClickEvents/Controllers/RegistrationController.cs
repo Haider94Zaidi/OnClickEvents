@@ -6,6 +6,7 @@ using System.Web;
 using System.Data.SqlClient;
 using System.Web.Mvc;
 using System.Configuration;
+using MySql.Data.MySqlClient;
 
 namespace OnClickEvents.Controllers
 {
@@ -17,7 +18,9 @@ namespace OnClickEvents.Controllers
             return View();
         }
 
-        // GET: Registration
+        #region "Registration / SignUp"
+
+        #region "customer"
         [HttpPost]
         public ActionResult Registering(string Name,string Email,string Contact,string Password,string DOB)
         {
@@ -64,6 +67,43 @@ namespace OnClickEvents.Controllers
 
             return Json(result);
         }
+        #endregion
+
+        #region "vendor"
+        [HttpPost]
+        public ActionResult vendorRegister(string Name,string Email,string Password,string Address,string Contact,string Cnic,string Account) {
+
+            string result="";
+            Vendor v = new Vendor();
+            v.Name = Name;
+            v.Email = Email;
+            v.Password = Password;
+            v.Address = Address;
+            v.Contact = Contact;
+            v.CNIC = Convert.ToInt64(Cnic);
+            v.Account = Account;
+
+            query = "Insert into vendor_owner(OwnerName,OwnerEmail,OwnerAddress,OwnerContact,OwnerPwd,OwnerCNIC,OwnerAccount) values('" + v.Name + "','" + v.Email + "','" + v.Address + "','" + v.Contact + "','" + v.Password + "'," + v.CNIC + ",'" + v.Account + "')";
+            try {
+                if (dal.ExecuteData(query) == "1")
+                {
+                    result = "success";
+                }
+                else {
+                    result = "failed";
+                }
+            }
+            catch (Exception ex) {
+               
+            }
+
+           return Json(result);
+        }
+        #endregion
+        
+        #endregion
+
+
 
 
         [HttpPost]

@@ -19,6 +19,12 @@ namespace OnClickEvents
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
+
+            /*
+             * 
+             * RegistrationController Routes 
+             * 
+             */
             routes.MapRoute(
                 name: "register",
                 url: "{controller}/{action}",
@@ -37,13 +43,25 @@ namespace OnClickEvents
                 defaults: new { controller = "Registration", action = "SignIn" }
             );
 
+            /*
+             * 
+             * UserController Routes
+             * 
+             */
+
             routes.MapRoute(
                 name:"user",
                 url:"{controller}/{action}",
                 defaults: new { controller = "User" , action="HomePage" }
                 );
+
+            /*
+             * 
+             *VendorController Routes 
+             * 
+             */
             routes.MapRoute(
-                name:"admindashboard",
+                name:"vendordashboard",
                 url:"{controller}/{action}",
                 defaults:new { controller="Vendor",action="DashBoard" } 
                 );
