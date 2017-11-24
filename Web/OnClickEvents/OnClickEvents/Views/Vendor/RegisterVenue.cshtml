@@ -5,9 +5,11 @@
 
     @Styles.Render(Url.Content("~/Content/UserCSS/Registration/styles.css"))
     @Styles.Render(Url.Content("~/Content/UserCSS/Registration/Pretty-Registration-Form.css"))
+<style type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</style>
 <div class="row register-form">
     <div class="col-md-12">
-        <form class="form-horizontal custom-form" enctype = "multipart/form-data">
+        <form class="form-horizontal custom-form" enctype = "multipart/form-data" @*action="../Venue/AddVenue"*@ id="regvenueForm">
             <h1>Register Venue</h1>
             <div class="form-group">
                 <div class="col-sm-2 label-column">
@@ -43,29 +45,37 @@
             </div>
             <div class="form-group">
                 <div class="col-sm-2 label-column">
+                    <label class="control-label" for="selectlocation">Venue Location </label>
+                </div>
+                <div class="col-sm-6 input-column  col-sm-offset-1">
+                    <button class="btn-info" id="selectlocation" data-toggle="modal" data-target="#mapModal">Pin to Select</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2 label-column">
                     <label class="control-label" for="dropdown-input-field">Venue-Type </label>
                 </div>
               
                     <div class="col-sm-2 col-sm-offset-1">
-                        <input type="checkbox" class="venuetypes" id="weddingcheck">
+                        <input type="checkbox" class="venuetypes" id="weddingcheck" value="wedding">
                         <span>
                             Wedding
                         </span>
                     </div>
                     <div class="col-sm-2 ">
-                        <input type="checkbox" class="venuetypes" id="concertcheck">
+                        <input type="checkbox" class="venuetypes" id="concertcheck" value="concert">
                         <span>
                             Concerts
                         </span>
                     </div>
                     <div class="col-sm-2">
-                        <input type="checkbox" class="venuetypes" id="partiescheck">
+                        <input type="checkbox" class="venuetypes" id="partiescheck" value="parties">
                         <span>
                             Parties
                         </span>
                     </div>
                     <div class="col-sm-2">
-                        <input type="checkbox" class="venuetypes" id="businesscheck">
+                        <input type="checkbox" class="venuetypes" id="businesscheck" value="business">
                         <span>
                             Business
                         </span>
@@ -77,29 +87,88 @@
                 </div>
                 <div class="col-sm-6 input-column  col-sm-offset-1">
                     <div class="field" align="left">
-                        <input type="file" id="files" name="files[]" multiple />
+                        <input type="file" id="files" name="files[]" multiple/>
                     </div>
                 </div>
             </div>
-            <button class="btn btn-default submit-button" type="button">Submit Form</button>
+            <button class="btn btn-default" type="submit" id="regvenuebtn">Submit Form</button>
+            
             </form>
         </div>
+    
     </div>
+
+<!-- Modal -->
+<div id="mapModal" class="modal fade modal-lg" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Drag pin to the Venue Location</h4>
+            </div>
+            <div class="modal-body" id="venmap" style="width:inherit;height:500px;background:yellow;">
+
+                @*<div   class="modal fade"></div>*@
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    var longitude = 0.00000;
+    var latitude = 0.00000;
+    function initMap() {
+        var mylatlong = new google.maps.LatLng(24.8615, 67.0099);
+        var map = new google.maps.Map(document.getElementById('venmap'), {
+            zoom: 16,
+            center: mylatlong,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        var myMarker = new google.maps.Marker({
+            position: mylatlong,
+            map:map,
+            draggable: true
+        });
+
+        google.maps.event.addListener(myMarker, 'dragend', function (evt) {
+            alert(' Current Lat: ' + evt.latLng.lat().toFixed(5) + ' Current Lng: ' + evt.latLng.lng().toFixed(5));
+            longitude = evt.latLng.lng().toFixed(5);
+            latitude = evt.latLng.lat().toFixed(5);
+        });
+    }
+    
+
+</script>
 <script type="text/javascript">
     var count = 0;
     $(document).ready(function () {
+
+        $("#selectlocation").click(function () {
+            $("#mapModal").modal('show');
+        });
+        $("#mapModal").on("shown.bs.modal", function () { initMap(); });
+        var files;
+        var fileReader;
         if (window.File && window.FileList && window.FileReader) {
             $("#files").on("change", function (e) {
 
-                var files = e.target.files,
-                    filesLength = files.length;
+                files = e.target.files,filesLength = files.length;
                 console.log(filesLength);
                 count++;
                 if (count <= 5) {
                     for (var i = 0; i < filesLength; i++) {
                         var f = files[i]
-                        var fileReader = new FileReader();
+                        fileReader = new FileReader();
                         fileReader.onload = (function (e) {
                             var file = e.target;
                             $("<div><span class=\"pip\">" +
@@ -109,13 +178,6 @@
                             $(".removeImg").click(function () {
                                 $(this).parent(".pip").remove();
                             });
-
-                            // Old code here
-                            /*$("<img></img>", {
-                              class: "imageThumb",
-                              src: e.target.result,
-                              title: file.name + " | Click to remove"
-                            }).insertAfter("#files").click(function(){$(this).remove();});*/
 
                         });
                         fileReader.readAsDataURL(f);
@@ -128,5 +190,97 @@
         } else {
             alert("Your browser doesn't support to File API")
         }
+
+         //form submit
+
+         $("#regvenuebtn").click(function () {
+             
+             var checkedVals = $('.venuetypes:checkbox:checked').map(function () {
+                 return this.value;
+             }).get();
+
+             var venname = $("#venuename").val();
+             var venadd = $("#venueaddress").val();
+             var venphone = $("#venuephone").val();
+             var venmobile = $("#venuemobile").val();
+
+             var venuetype = checkedVals.join(",");
+             var fileUpload = $("#files").get(0);
+             var files = fileUpload.files;
+             
+             // Create FormData object  
+             var fileData = new FormData();
+
+             if (files.length == 5) {
+                 if (venname != "" && venname.length >= 3) {
+                     if (venadd != "" && venadd.length > 5) {
+                         if (venphone != "" && venphone.length != 12) {
+                             if (venmobile != "" && venmobile.length != 12) {
+                                 if (checkedVals != "") {
+                                     if (longitude != 0.00000 && latitude != 0.00000) {
+                                         // Looping over all files and add it to FormData object  
+                                         for (var i = 0; i < files.length; i++) {
+                                             fileData.append(files[i].name, files[i]);
+                                         }
+
+                                         // Adding one more key to FormData object  
+                                         fileData.append('venuename', venname);
+                                         fileData.append('venueaddress', venadd);
+                                         fileData.append('venuephone', venphone);
+                                         fileData.append('venuemobile', venmobile);
+                                         fileData.append('Longitude', longitude);
+                                         fileData.append('Latitude', latitude);
+                                         fileData.append('venuetype', venuetype);
+
+                                         $.ajax({
+                                             url: '/Venue/AddVenue',
+                                             type: "POST",
+                                             contentType: false, // Not to set any content header  
+                                             processData: false, // Not to process data  
+                                             data: fileData,
+                                             success: function (result) {
+                                                 if (result = "Venue is Registered") {
+                                                     alert("Registered Successfully")
+                                                 }
+                                             },
+                                             error: function (err) {
+                                                 alert(err.responseJSON + "inside error");
+                                             }
+                                         });  
+
+                                     }
+                                     else {
+                                         alert("Please pin your venue location in map (Drag the Marker to pin)")
+                                     }
+                                 }
+                                 else {
+                                     alert("Please select your venue type (you can select multiple)")
+                                 }
+                             }
+                             else {
+                                 alert("Mobile Number is Incorrect")
+                             }
+                         }
+                         else {
+                             alert("Phone Number is Incorrect")
+                         }
+                     }
+                     else {
+                         alert("Please specify the Venue Address")
+                     }
+                 }
+                 else {
+                     alert("Please specify Venue Name")
+                 }
+             }
+             else {
+                 alert("please attach 5 images")
+             }
+             
+        });
+
+
     });
 </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrgIMvijvdBc9JyMEOxtm9-UrN9yVO2PU&callback=initMap"></script>
